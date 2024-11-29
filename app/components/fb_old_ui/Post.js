@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const posts = [
   {
     title: "💻 Main Stack",
@@ -50,9 +52,11 @@ const Post = ({ post }) => {
       {photos.length > 0 && (
         <div className={`grid grid-cols-4 gap-2 mt-4`}>
           {photos.map((photo, index) => (
-            <img
+            <Image
               key={index}
               src={photo}
+              width={285}
+              height={285}
               alt={`Photo ${index + 1}`}
               className="w-full h-[70px] object-contain"
               // className="w-full h-full object-cover rounded-none shadow-custom border-[#0f0d0e] border-4"

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const ProfileHeader = () => {
   return (
     <div className="relative ">
@@ -16,9 +18,11 @@ const ProfileHeader = () => {
 
       {/* Profile Picture */}
       <div className="absolute left-4 bottom-0 transform translate-y-1/2 rounded-lg">
-        <img
+        <Image
           src="/assets/profile.webp"
           alt="Profile"
+          width={285}
+          height={285}
           className="w-[285px] h-[285px] border-4 border-[#0f0d0e] rounded-none object-cover shadow-custom"
         />
       </div>
