@@ -97,7 +97,9 @@ const Works = () => {
       children: (
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 h-[60vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-black">
           {category === "Graphic Design"
-            ? projects.map((project, i) => <GDCard imageUrl={project.image} />)
+            ? projects.map((project, i) => (
+                <GDCard key={i} imageUrl={project.image} />
+              ))
             : projects.map((project, i) => (
                 <div key={i} className="flex flex-col">
                   <ProjectCard
