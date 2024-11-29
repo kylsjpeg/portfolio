@@ -9,7 +9,6 @@ const ProfileHeader = () => {
         <div className="absolute bottom-4 left-6 ml-[300px]">
           <h1 className="font-krona text-3xl font-bold">About Kyla 🍯🐝</h1>{" "}
           <h2 className="text-1xl ">
-            {" "}
             24 | BS Information Technology - Specializing in Web and Mobile App
             Development
           </h2>

@@ -15,8 +15,7 @@ const posts = [
     ],
   },
   {
-    title: "🎨 Tools",
-    // date: "Just Now",
+    title: "🎨 UI/UX Tools",
     content: "These tools have been lifesavers for my projects.",
     photos: ["/assets/techstack/figma.webp", "/assets/techstack/mockplus.webp"],
   },
@@ -24,14 +23,6 @@ const posts = [
 
 const Post = ({ post }) => {
   const photos = post.photos || []; // Fallback if no photos
-
-  // Determine grid columns based on divisibility
-  // let gridCols = "grid-cols-3"; // Default to 1 column
-  // if (photos.length % 4 === 0) {
-  //   gridCols = "grid-cols-3";
-  // } else if (photos.length % 4 === 0) {
-  //   gridCols = "grid-cols-2";
-  // }
 
   return (
     <div className="bg-white p-4 rounded-none border-[#0f0d0e] border-4 mb-4">
